@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<title>Parth's Index</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+html,body {font-family:"Monotype Corsiva",sans-serif}
+h1,h2,h3,h4,h5,h6 {font-family:"Times New Roman",sans-serif}
+</style>
+<script src=""></script>
+<body>
+
+<img src="img_la.jpg" alt="LA" style="width:75%">
+
+<h1>This is my Heading</h1>
+<p>This is the paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
