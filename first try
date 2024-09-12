@@ -6,15 +6,15 @@
 <link rel="stylesheet" href="">
 <style>
 html,body {font-family:"Monotype Corsiva",sans-serif}
-h1,h2,h3,h4,h5,h6 {font-family:"Times New Roman",sans-serif}
+h1,h2,h3,h4,h5,h6 {font-family:"Arial",sans-serif}
 </style>
 <script src=""></script>
 <body>
 
 <img src="img_la.jpg" alt="LA" style="width:75%">
 
-<h1>This is my Heading</h1>
-<p>This is the paragraph.</p>
+<h1>Welcome to my page!</h1>
+<p>Hey, I'm Parth Valand.</p>
 <p>This is another paragraph.</p>
 
 </body>
