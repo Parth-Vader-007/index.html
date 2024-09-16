@@ -5,155 +5,131 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="">
 <style>
-html,body {font-family:"Monotype Corsiva",sans-serif}
-h1,h2,h3,h4,h5,h6 {font-family:"Arial",sans-serif}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  
-  /* Add a black background color to the top navigation */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(6, 47, 67);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation bar */
 .topnav {
-  background-color: #000;
-  overflow: hidden;
+    background-color: #000;
+    overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: #333;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #333;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+    background-color: #04AA6D;
+    color: white;
 }
 
-.hero-image {          /*ChatGPT helped me here and told me to add CSS to properly use the hero image stuff to make the page look much better and not actually display the code...*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qWA9ALGYReD_ChNXNCRReWESSnX4R91lOw&s");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+/* Hero Image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qWA9ALGYReD_ChNXNCRReWESSnX4R91lOw&s");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-*, *:before, *:after {
-  box-sizing: inherit;
+.hero-text {
+    text-align: center;
+    color: white;
 }
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+/* Content Sections */
+.content-section, .about-section, .contact-section {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
+    background-color: #474e5d;
 }
 
-.container {
-  padding: 0 16px;
+.contact-section {
+    background-color: #f2f2f2;
+    color: black;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-  * {
-  box-sizing: border-box;
-}
-
-/* Style inputs */
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    margin-top: 0;
-  }
-}  
-  /*I am following what each paragraph of CSS code is doing, and at this point I realise that all styling code can be made universal and always has to go in the style block at the top.*/
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
-  .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: orange;
-  color: white;
-  text-align: center;
+/* Responsive Layout */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 
-    body, html{
-      height:100%;
-      background-color:rgb(6,47,67);
-      scroll-behaviour: smooth;
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 </style>
 <script src=""></script>
@@ -205,7 +181,7 @@ input[type=submit]:hover {
     </div>
   </div>
 </div>
-  </section>>
+  </section>
 
   <h1>Work Experience, huh? About that...</h1>
   <p>Yeah, well you see, the thing is that I haven't exactly found a job yet. But don't worry, I'm on the hunt!</p>
